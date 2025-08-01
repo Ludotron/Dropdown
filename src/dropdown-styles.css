@@ -1,0 +1,40 @@
+.dropdown {
+  width: fit-content;
+  font-family: "Courier New", monospace;
+}
+.dropdown-head {
+  background-color: lightyellow;
+  display: grid;
+  grid-template-columns: 1fr 1em;
+  column-gap: 3em;
+  padding: 1em 2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.dropdown-body {
+  background-color: yellow;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  position: absolute;
+}
+.dropdown-body > li {
+  padding: 0.5em 2em;
+}
+.dropdown-option:nth-child(even) {
+  background-color: whitesmoke;
+}
+.dropdown-option:nth-child(odd) {
+  background-color: snow;
+}
+.dropdown-option a {
+  text-decoration: none;
+  color: black;
+}
+.dropdown-option a:visited {
+  color: gray;
+}
+.dropdown-option:hover {
+  font-weight: bold;
+}
